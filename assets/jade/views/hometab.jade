@@ -1,0 +1,110 @@
+section#main_home.tab-pane.active
+	section#home
+		.slider_area
+			#myCarousel.carousel.slide
+				ol.carousel-indicators
+					li(data-target="#myCarousel" data-slide-to="0")
+					li.active(data-target="#myCarousel" data-slide-to="1")
+				.carousel-inner
+					.item.active
+						+jpg("slider1")
+					.item
+						+jpg("slider2")
+				a.left.carousel-control(href="#myCarousel" data-slide="prev")
+				a.right.carousel-control(href="#myCarousel" data-slide="next")
+
+	section#banner
+		.container
+			.row
+				.col-sm-5
+					+jpg("banner1")
+				.col-sm-7
+					+jpg("banner2")
+
+	section#bestitems
+		.container
+			.row
+				.col-sm-offset-3.col-sm-6
+					a(data-slide="prev" href="#media" class="left carousel-control") <
+					ul.nav.nav-pills.nav-justified
+						li
+							a(href="#") LATEST
+						li
+							a(href="#") BESTSELLER
+						li
+							a(href="#") SALE
+					a(data-slide="next" href="#media" class="right carousel-control") >
+			.row
+				#media.carousel.slide.media-carousel
+					.carousel-inner
+						.item.active
+							+slideritem1("a1", "b1", "c1", "d1")
+						.item
+							+slideritem1("e1", "f1", "g1", "h1")
+						.item
+							+slideritem1("g1", "i1", "j1", "k1")
+
+	section#clients
+		.container
+			.row
+				.col-xs-4.col-sm-2
+					+jpg("client1")
+				.col-xs-4.col-sm-2
+					+jpg("client2")
+				.col-xs-4.col-sm-2
+					+jpg("client3")
+				.col-xs-4.col-sm-2
+					+jpg("client4")
+				.col-xs-4.col-sm-2
+					+jpg("client5")
+				.col-xs-4.col-sm-2
+					+jpg("client6")
+
+	section#moreitems
+		.container
+			.row
+				.col-sm-offset-3.col-sm-6
+					a(data-slide="prev" href="#media2" class="left carousel-control") <
+					ul.nav.nav-pills.nav-justified
+						li
+							a(href="#") LATEST
+						li
+							a(href="#") BESTSELLER
+						li
+							a(href="#") SALE
+					a(data-slide="next" href="#media2" class="right carousel-control") >
+			#media2.carousel.slide.media-carousel
+				.row
+					.carousel-inner
+						.item.active
+							+slideritem2("a2", "d2", "g2")
+						.item
+							+slideritem2("a2", "a2", "a2")
+						.item
+							+slideritem2("b2", "b2", "b2")
+				.row
+					.carousel-inner
+						.item.active
+							+slideritem2("c2", "c2", "b2")
+						.item
+							+slideritem2("j2", "j2", "j2")
+						.item
+							+slideritem2("k2", "k2", "k2")
+	section#blog
+		.container
+			h2.text-center < BLOG >
+			.row
+				+blogbox("blog2")
+				+blogbox("blog1")
+				+blogbox("blog2")
+				+blogbox("blog3")
+			.row
+				.col-sm-4
+					h3 ORDER ONLINE NOW
+					h4 Call Us: (0123) 456 789
+				.col-sm-4
+					h3 FREE WORLDWIDE SHIPPING
+					h4 On Order Over $100
+				.col-sm-4
+					h3 30 DAYS MONEY BACK 100%
+					h4 Satisfaction Guarantee

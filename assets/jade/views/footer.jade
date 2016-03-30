@@ -1,0 +1,51 @@
+footer
+	section.footerlist
+		.container
+			.col-sm-3
+				h2 ACCESORIES
+				p= textlorem
+				+social()
+			.col-sm-6
+				.row
+					.col-sm-4
+						h2 MY ACCOUNT
+							ul
+								each link in footerlist1
+									li
+										a(href='#{link.url}')
+											i.fa.fa-caret-right
+											| #{link.name}
+					.col-sm-4
+						h2 INFORMATION
+							ul
+								each link in footerlist2
+									li
+										a(href='#{link.url}')
+											i.fa.fa-caret-right
+											| #{link.name}
+					.col-sm-4
+						h2 EXTRAS
+							ul
+								each link in footerlist3
+									li
+										a(href='#{link.url}')
+											i.fa.fa-caret-right
+											| #{link.name}
+			.col-sm-3
+				h2 ABOUT US
+				p
+					| 901 Marmora Road, Glasgow D04 89
+					br
+					| GR, New York
+				p
+					| (0123)456789
+					br
+					| (0987)654321
+				p admin@bootexpertscom
+	.footer
+		.container
+			.row
+				.col-sm-6
+					p Copyright c 2015 BootExperts. All rights reserved.
+				.col-sm-6.text-right
+					+png("payment")

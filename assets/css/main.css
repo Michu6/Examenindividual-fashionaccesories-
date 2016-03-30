@@ -1,0 +1,97 @@
+body {
+  font-family: "Raleway", Arial, sans-serif!important; }
+
+img {
+  width: 100%; }
+
+h1 {
+  margin: 0; }
+
+h2 {
+  font: bold 1.2em "Raleway", Arial, sans-serif!important; }
+
+p {
+  font-size: 0.86em; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+#header {
+  background-color: #EDEEEE; }
+  #header p {
+    padding-top: 10px; }
+  #header .firstlink {
+    font-size: 0.8em; }
+  #header #mainlogo {
+    background-color: #FFFFFF;
+    padding: 3% 0; }
+    #header #mainlogo .time {
+      font: bold 1.7em "Raleway", Arial, sans-serif!important; }
+    #header #mainlogo img {
+      width: auto; }
+    #header #mainlogo input {
+      border-radius: 0px; }
+
+#mainNav {
+  background-color: #EDEEEE; }
+  #mainNav .nav-tabs li a {
+    padding: 20px;
+    color: #333333;
+    font: bold 1em "Raleway", Arial, sans-serif!important; }
+  #mainNav .nav-tabs li.active a {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #E48080;
+    border: none;
+    color: #FFFFFF;
+    padding: 20px; }
+
+.bgblack {
+  background-color: black;
+  color: white;
+  text-align: center; }
+
+#clients {
+  background: url("../images/client-bg.jpg") 12% 30% fixed; }
+
+#media2 img {
+  width: auto;
+  height: auto; }
+
+.contactbanner {
+  background: url("../images/contact.jpg") 0 100% fixed;
+  color: #FFFFFF; }
+
+footer .footerlist {
+  background-color: #EDEEEE; }
+  footer .footerlist .social-media a {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    color: #333333;
+    font-size: 1em;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    vertical-align: middle; }
+    footer .footerlist .social-media a:hover {
+      background-color: #E48080;
+      color: #FFFFFF;
+      text-decoration: none; }
+  footer .footerlist ul li a {
+    color: #EDEEEE;
+    font-size: 0.6em; }
+footer .footer {
+  background-color: #393d3d;
+  color: white;
+  padding: 2% 0; }
+  footer .footer p {
+    font-size: 0.8em; }
+  footer .footer img {
+    width: auto; }
+
+/*# sourceMappingURL=main.css.map */

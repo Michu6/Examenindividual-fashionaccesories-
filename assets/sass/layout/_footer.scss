@@ -1,0 +1,23 @@
+footer {
+	.footerlist {
+		background-color: $silver;
+		.social-media a {
+			@include social();
+		}
+		ul li a {
+			color: $silver;
+			font-size: 0.6em;
+		}
+	}
+	.footer {
+		background-color: darken($silver, 70);
+		color: white;
+		padding: 2% 0;
+		p {
+			font-size: 0.8em;
+		}
+		img {
+			width: auto;
+		}
+	}
+}

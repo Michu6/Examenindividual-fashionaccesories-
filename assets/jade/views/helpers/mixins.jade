@@ -1,0 +1,65 @@
+mixin jpg(nameimg)
+	img(src="assets/images/" + nameimg + ".jpg")
+
+mixin png(nameimg)
+	img(src="assets/images/" + nameimg + ".png")
+
+
+//- SECTION BEST ITEMS
+mixin slideritem1box()
+	h2 Deliver Wide
+	span *****
+	span.red $218.00
+
+mixin slideritem1(img1, img2, img3, img4)
+	.row
+		.col-xs-3
+			+jpg(img1)
+			+slideritem1box()
+		.col-xs-3
+			+jpg(img2)
+			+slideritem1box()
+		.col-xs-3
+			+jpg(img3)
+			+slideritem1box()
+		.col-xs-3
+			+jpg(img4)
+			+slideritem1box()
+
+//- SECTION MORE ITEMS
+mixin slideritem2box(item2)
+	.media
+		.media-left
+			+jpg(item2)
+		.media-body
+			h2 Deliver Wide
+			span.red $218.00
+			br
+			span *****
+			.btn.btn-default Add to Cart
+
+mixin slideritem2(img1, img2, img3)
+	.col-md-4
+		+slideritem2box(img1)
+	.col-md-4
+		+slideritem2box(img2)
+	.col-md-4
+		+slideritem2box(img3)
+
+//- SECTION BLOG
+mixin blogbox(imgblog)
+	.col-sm-3
+		+jpg(imgblog)
+		h2 THE SAMPLE HEADING TITLE
+		h2!= h2small
+		p Lorem Ipsum dolor sit amet, consectetur adipisic ing elit, sed do...
+		a.more(href="#") Read more...
+
+//- FOOTER
+mixin social()
+	.social-media
+		a(href="#").social-circle.fa.fa-facebook
+		a(href="#").social-circle.fa.fa-twitter
+		a(href="#").social-circle.fa.fa-rss
+		a(href="#").social-circle.fa.fa-skype
+		a(href="#").social-circle.fa.fa-dribbble

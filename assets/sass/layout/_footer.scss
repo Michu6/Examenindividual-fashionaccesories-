@@ -4,9 +4,12 @@ footer {
 		.social-media a {
 			@include social();
 		}
-		ul li a {
-			color: $silver;
-			font-size: 0.6em;
+		ul li {
+			line-height: 2em;
+			a {
+				color: darken($silver, 70);
+				font-size: 0.6em;
+			}
 		}
 	}
 	.footer {

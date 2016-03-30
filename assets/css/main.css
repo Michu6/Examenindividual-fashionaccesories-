@@ -82,9 +82,11 @@ footer .footerlist {
       background-color: #E48080;
       color: #FFFFFF;
       text-decoration: none; }
-  footer .footerlist ul li a {
-    color: #EDEEEE;
-    font-size: 0.6em; }
+  footer .footerlist ul li {
+    line-height: 2em; }
+    footer .footerlist ul li a {
+      color: #393d3d;
+      font-size: 0.6em; }
 footer .footer {
   background-color: #393d3d;
   color: white;

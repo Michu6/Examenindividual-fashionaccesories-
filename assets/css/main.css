@@ -48,6 +48,9 @@ ul {
     color: #FFFFFF;
     padding: 20px; }
 
+#banner, #bestitems, #clients, #moreitems, #blog {
+  padding: 5% 0; }
+
 .bgblack {
   background-color: black;
   color: white;
